@@ -26,7 +26,7 @@ uncheckedHsFFIDefines = ["__STDC_LIMIT_MACROS"]
 llvmVersion = Version [3,5] []
 
 llvmConfigNames = [
-  "/usr/local/opt/llvm/bin/llvm-config", -- brew install llvm (DO NOT `brew link llvm`)
+  "/usr/local/opt/llvm35/bin/llvm-config-3.5", -- brew install llvm35 --with-python --with-all-targets --with-shared-libs --with-lld --with-asan
   "llvm-config-" ++ (intercalate "." . map show . versionBranch $ llvmVersion),
   "llvm-config"
  ]
